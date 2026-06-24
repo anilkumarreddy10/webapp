@@ -16,7 +16,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <repository.server.root>http://localhost:8081/repository</repository.server.root>
+    <repository.server.root>http://35.226.114.115:8081/repository</repository.server.root>
      <releases.distribution.url>
         ${repository.server.root}/test-release/
      </releases.distribution.url>
@@ -27,12 +27,12 @@
 
   <distributionManagement>
         <repository>
-            <id>internalMavenReleaseRepository</id>
+            <id>ReleaseRepository</id>
             <name>Internal Maven Release Repository</name>
             <url>${releases.distribution.url}</url>
          </repository>
          <snapshotRepository>
-            <id>internalMavenSnapshotRepository</id>
+            <id>SnapshotRepository</id>
             <name>Internal Snapshots Repository</name>
             <url>${snapshots.distribution.url}</url>
             <uniqueVersion>false</uniqueVersion>
