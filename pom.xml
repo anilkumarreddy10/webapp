@@ -6,12 +6,12 @@
   <connection>scm:git:git@github.com:anilkumarreddy10/webapp.git</connection>
   <developerConnection>scm:git:git@github.com:anilkumarreddy10/webapp.git</developerConnection>
   <url>https://github.com/anilkumarreddy10/webapp</url>
-    <tag>samplewebapp-1.8</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <groupId>com.capg</groupId>
   <artifactId>samplewebapp</artifactId>
-  <version>1.8</version>
+  <version>1.9-SNAPSHOT</version>
 
   <name>samplewebapp</name>
   <!-- FIXME change it to the project's website -->
