@@ -7,7 +7,7 @@
       <developerConnection>scm:git:https://github.com/anilkumarreddy10/webapp.git</developerConnection>
       <url>https://github.com/anilkumarreddy10/webapp</url>
       
-    <tag>samplewebapp-1.0</tag>
+    
   </scm>
 
   <groupId>com.capg</groupId>
