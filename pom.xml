@@ -21,7 +21,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <repository.server.root>http://35.226.114.115:8081/repository</repository.server.root>
+    <repository.server.root>http://34.41.212.32:8081/repository</repository.server.root>
      <releases.distribution.url>
         ${repository.server.root}/maven-releases/
      </releases.distribution.url>
