@@ -7,12 +7,12 @@
   <developerConnection>scm:git:git@github.com:anilkumarreddy10/webapp.git</developerConnection>
   <url>https://github.com/anilkumarreddy10/webapp</url>
    
-    <tag>HEAD</tag>
+    <tag>samplewebapp-1.15</tag>
   </scm>
 
   <groupId>com.capg</groupId>
   <artifactId>samplewebapp</artifactId>
-  <version>1.15-SNAPSHOT</version>
+  <version>1.15</version>
 
   <name>samplewebapp</name>
   <!-- FIXME change it to the project's website -->
