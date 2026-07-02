@@ -4,6 +4,11 @@ pipeline {
     tools {
         maven 'mvn'
     }
+    environment {
+        REGISTRY = "docker.io/gangalakunta"
+        IMAGE_TAG  = "latest"
+        IMAGE_NAME = "my-java-app" 
+    }
 
     stages {
         stage('Clean Workspace') {
@@ -39,11 +44,6 @@ pipeline {
             }
         }
         stage('docker') {
-            environment {
-                REGISTRY = "docker.io/gangalakunta"
-                IMAGE_TAG  = "latest"
-                IMAGE_NAME = "my-java-app" 
-            }
             steps {
                 sh "docker build -t ${REGISTRY}/${IMAGE_NAME}:${BUILD_NUMBER} ."
             }
