@@ -39,8 +39,13 @@ pipeline {
             }
         }
         stage('docker') {
+            environment {
+                REGISTRY = "docker.io/gangalakunta"
+                IMAGE_TAG  = "latest"
+                IMAGE_NAME = "my-java-app" 
+            }
             steps {
-                sh "docker build -t myapp ."
+                sh "docker build -t ${REGISTRY}/${IMAGE_NAME}:${BUILD_NUMBER} ."
             }
         }
     }
