@@ -66,7 +66,7 @@ pipeline {
         }
         stage('deploy to gke') {
             steps {
-                sh "kubectl apply -f deployment.yaml"
+                sh "kubectl apply -f Deployment.yaml"
             }
         }
     }
