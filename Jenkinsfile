@@ -8,6 +8,9 @@ pipeline {
         REGISTRY = "docker.io/gangalakunta"
         IMAGE_TAG  = "latest"
         IMAGE_NAME = "my-java-app" 
+        PROJECT_ID = 'project-820f02b7-4f02-4540-a71'
+        CLUSTER_NAME = 'my-cluster'
+        REGION = 'us-central1'
     }
 
     stages {
@@ -54,6 +57,16 @@ pipeline {
                    sh "echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin"
                    sh "docker push ${REGISTRY}/${IMAGE_NAME}:${BUILD_NUMBER}"
                 }
+            }
+        }
+        stage('connect to gke') {
+            steps {
+                sh "gcloud container clusters get-credentials $CLUSTER_NAME --region $REGION"
+            }
+        }
+        stage{'deploy to gke') {
+            steps {
+                sh "kubectl apply -f deployment.yaml"
             }
         }
     }
