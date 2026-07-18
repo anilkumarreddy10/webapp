@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label "worker-node"
-    }
+    agent any
 
     tools {
         maven 'mvn'
